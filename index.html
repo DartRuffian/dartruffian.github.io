@@ -1,19 +1,53 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="wrapper">
-            <header></header>
-            <main>
-                <p>This is a WIP
-                    If you need to contact me, reach me through <a href="mailto:gratewilliam2004@gmail.com">my email</a>
-                </p>
-            </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <p></p>
+        
+    <section class="hidden">
+        <h1>Hello there!</h1>
+        <p>This version of my page is a test for animations.</p>
+    </section>
+
+    <section class="hidden">
+        <h2>These two areas are both sections with paragraphs</h2>
+        <p>
+            Do you like the fade in?<br>
+            I think it looks nice.
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h2>Here's a list with delays</h2>
+        <div class="exampleList">
+            <div style="--order: 2;" class="hidden">
+                <p>First item</p>
+            </div>
+            <div style="--order: 3;" class="hidden">
+                <p>Second item</p>
+            </div>
+            <div style="--order: 4;" class="hidden">
+                <p>Third item</p>
+            </div>
+            <div style="--order: 5;" class="hidden">
+                <p>Fourth item</p>
+            </div>
         </div>
-    </body>
+    </section>
+
+    <section class="hidden">
+        <h2>Want to reach me?</h2>
+        <p class="hidden" style="--order: 1;">
+            Contact me through <a href="mailto:gratewilliam2004@gmail.com">my e-mail</a>!
+        </p>
+    </section>
+</body>
 </html>
