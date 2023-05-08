@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>👋 Dart's About Me</title>
 
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <script defer src="app.js"></script>
 </head>
 <body>
-    <p></p>
-        
-    <section class="hidden">
-        <h1>Hello there!</h1>
-        <p>This version of my page is a test for animations.</p>
-    </section>
+    <div id="blockContainer">
+        <div class="infoBlock" id="socials">
+            <img id="avatar" src="https://avatars.githubusercontent.com/u/59131299">
+            <!-- <img id="avatar" src="images\avatar.png"> -->
+            <h2 id="username">DartRuffian</h2>
 
-    <section class="hidden">
-        <h2>These two areas are both sections with paragraphs</h2>
-        <p>
-            Do you like the fade in?<br>
-            I think it looks nice.
-        </p>
-    </section>
-
-    <section class="hidden">
-        <h2>Here's a list with delays</h2>
-        <div class="exampleList">
-            <div style="--order: 2;" class="hidden">
-                <p>First item</p>
+            <!-- Links to Socials -->
+            <!-- TODO: Discord logo does not appear -->
+            <div class="socialItem hidden">
+                <div class="imageHolder">
+                    <img src="images/discord.svg">
+                </div>
+                <h3>DartRuffian#9962</h3>
             </div>
-            <div style="--order: 3;" class="hidden">
-                <p>Second item</p>
+            <div class="socialItem hidden">
+                <div class="imageHolder">
+                    <img src="images/github.svg">
+                </div>
+                <a href="https://github.com/DartRuffian"><h3>DartRuffian#9962</h3></a>
             </div>
-            <div style="--order: 4;" class="hidden">
-                <p>Third item</p>
-            </div>
-            <div style="--order: 5;" class="hidden">
-                <p>Fourth item</p>
+            <div class="socialItem hidden">
+                <div class="imageHolder">
+                    <img src="images/discord.svg">
+                </div>
+                <h3>DartRuffian</h3>
             </div>
         </div>
-    </section>
 
-    <section class="hidden">
-        <h2>Want to reach me?</h2>
-        <p class="hidden" style="--order: 1;">
-            Contact me through <a href="mailto:skulldude327@gmail.com">my e-mail</a>!
-        </p>
-    </section>
+        <div class="infoBlock" id="aboutme">
+            <h2>About Me</h2>
+            <p>This is currently a WIP!</p>
+        </div>
+
+        <div class="infoBlock" id="projects">
+            <h2>Projects</h2>
+        </div>
+    </div>
 </body>
 </html>

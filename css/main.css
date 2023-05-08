@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+/*
+    Background Gradient
+    Global properties
+*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: #494b64;
+    background: linear-gradient(90deg, #494b64, #696c7d);
+
+    color: #494b64;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Profile Blocks */
+#blockContainer
+{
+    display: flex;
+}
+
+.infoBlock
+{
+    margin: 3% 1% 3% 1%;
+    flex: 50%;
+    /* gap: 3em; */
+
+    border: 5px solid #d9735d;
+    border-radius: 10px;
+
+    background-color: #f0d8c0;
+    box-shadow: 10px 10px 3px #282a3a;
+}
+
+#socials
+{
+    min-width: 15em;
+    max-width: 15%;
+}
+
+#aboutme
+{
+    min-width: 30em;
+    max-width: 70%;
+}
+
+#projects
+{
+    min-width: 15em;
+    max-width: 15%;
+}
+
+h2
+{
+    background: #FFFFFF;
+
+    margin: 10px auto;
+    min-width: 130px;
+    max-width: 150px;
+    text-align: center;
+
+    border: solid #f19975 2px;
+    border-radius: 10px;
+}
+
+h3
+{
+    font-weight: normal;
+}
+
+
+#avatar
+{
+    min-width: 150px;
+    max-width: 150px;
+
+    /* Center image */
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+
+    border: 5px solid #d9735d;
+    border-radius: 50%;
+}
+
+#username
+{
+    min-width: 5em;
+    max-width: 60%;
+    margin-bottom: 2em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*
+    Put icons next to text
+    TODO: Current solution breaks when changing resolution
+*/
+.socialItem
+{
+    background: #FFFFFF;
+
+    margin: 10px auto;
+    min-width: 5em;
+    max-width: 90%;
+    height: 3em;
+
+    display: table;
+    text-align: center;
+
+    border: solid #f19975 2px;
+    border-radius: 10px;
+    padding: 0px 5px 0 5px;
+}
+
+.socialItem > h3
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.imageHolder
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    /* height: 100%; */
+}
+
+.imageHolder > img
+{
+    width: 55%;
+    /* padding-top: 45%;
+    vertical-align: center; */
+}
+
+
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition-delay: calc(100ms * var(--order));
+}
