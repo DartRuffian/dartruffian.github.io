@@ -18,7 +18,7 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
-a
+h1,h2,h3 > a
 {
     text-decoration: none;
 }
@@ -60,6 +60,27 @@ a:hover
 {
     min-width: 30em;
     max-width: 70%;
+}
+
+section
+{
+    border: solid #f19975 2px;
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    width: 90%;
+    margin: 2% auto;
+}
+section > h3
+{
+    text-decoration: underline;
+    text-align: center;
+}
+section > p
+{
+    border: none;
+    text-align: justify;
 }
 
 #projects
@@ -195,7 +216,11 @@ h3
     vertical-align: center; */
 }
 
+/* Shorthand styles for <span> tags */
+.bold {font-weight: bold;}
 
+
+/* Used to animate objects */
 .hidden
 {
     opacity: 0;
